@@ -1,3 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
 
+body {
+  min-height: 100vh;
+  padding: 5rem 1rem 2rem 1rem;
+  background-color: #FAFAF9;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .estrella-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #F5C044;
+  margin-bottom: 10px;
+}
+.container .estrella-container #estrella path {
+  fill: #ffeec8;
+  stroke: #ffd87e;
+}
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.container .check-container {
+  margin-bottom: 4rem;
+}
+.container .check-container .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.container .check-container .list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .check-container .list li path {
+  fill: #4CA154;
+}
+
+.info {
+  max-width: 600px;
+}
+
+.card-container {
+  width: 100%;
+}
+
+.testimonios {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.testimonios .card {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 0 30px rgba(180, 177, 177, 0.2);
+  border-radius: 10px;
+  padding: 1rem 2rem 0 2rem;
+}
+.testimonios .card .logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.testimonios .card .logo img {
+  width: 80px;
+}
+.testimonios .card .logo #estrella-fill path {
+  fill: #F5C044;
+  stroke: #F5C044;
+}
+.testimonios .card .user {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonios .card .user h5 {
+  color: black;
+  font-weight: 900;
+  font-size: 15px;
+}
+.testimonios .card .user p {
+  margin-top: 5px;
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.Samantha {
+  float: right;
+}
+
+@media (min-width: 750px) {
+  .container {
+    flex-direction: row;
+    padding: 4rem 3rem;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
